@@ -12,7 +12,7 @@ class Sistema extends Model
     public $timestamps = false;
 
     protected $fillable = [
-    	'nombreSistema',
+    	'nombreSiste',
 		'nombreBreveSiste',
         'fechaCreaSiste',
         'estaSiste'

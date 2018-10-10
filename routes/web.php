@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('sistemas.dashboard');
 });
 
-Route::resource('/sistemas', 'SistemaController', ['except'=>'show']);
+Route::resource('/sistemas', 'SistemaController', ['except'=>'show', 'create', 'edit']);

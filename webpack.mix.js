@@ -12,7 +12,14 @@ const mix = require('laravel-mix');
  */
 //usamos scripts por que se esta usando varios archivos, si fuera solo 1 archivo se usaria js
 mix.scripts([
+    'resources/js/jquery.js',
+    'resources/js/bootstrap.js',
+    'resources/js/toastr.js',
     'resources/js/vue.js',
     'resources/js/axios.js',
     'resources/js/app.js'
-    ], 'public/js/app.js');
+    ], 'public/js/app.js')
+    .styles([
+    'resources/css/bootstrap.css',
+    'resources/css/toastr.css'
+    ], 'public/css/app.css');
